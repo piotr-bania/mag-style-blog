@@ -1,0 +1,98 @@
+/* ------------------------------ Fonts import ------------------------------ */
+@import url("https://use.typekit.net/nxo2ovb.css");
+
+/* ------------------------------ Variables ------------------------------ */
+$purple: #8A3FFC;
+$magenta: #D02670;
+$background: #21272A;
+$backgroundFaded: rgba(105, 112, 119, 0.25);
+$darkGrey: #697077;
+$lightGrey: #D0D0D1;
+$white: #FFFFFF;
+$gradientPurple: linear-gradient(90deg, rgba(138, 63, 252, 1) 0%, rgba(208, 38, 112, 1) 100%);
+$gradientPurpleFaded: linear-gradient(90deg, rgba(138, 63, 252, 0.75) 0%, rgba(208, 38, 112, 0.75) 100%);
+$gradientBackground: linear-gradient(90deg, rgba(105, 112, 119, 0.75) 0%, rgba(105, 112, 119, 0) 80%);
+$gradientBackgroundFaded: linear-gradient(90deg, rgba(105, 112, 119, 0.5) 0%, rgba(105, 112, 119, 0) 80%);
+$gradientOverlay: linear-gradient(0deg, rgba(105, 112, 119, 0) 0%, rgba(105, 112, 119, 1) 100%);
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  background: $background;
+  color: $lightGrey;
+  font-family: proxima-nova;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.4;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: contralto-big;
+  font-weight: 600;
+  font-style: normal;
+  color: $white;
+  line-height: 1;
+  margin: 0;
+}
+
+h1 {
+  font-size: 95px;
+}
+
+h2 {
+  font-size: 80px;
+}
+
+h3 {
+  font-size: 75px;
+}
+
+h4 {
+  font-size: 25px;
+  line-height: 0;
+  margin-top: 35px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+a {
+  font-family: proxima-nova;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $lightGrey;
+  opacity: 0.75;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: $lightGrey;
+    opacity: 1;
+  }
+
+  &:focus {
+    font-weight: 300;
+    color: $white;
+    opacity: 1;
+  }
+}
